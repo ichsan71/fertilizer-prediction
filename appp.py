@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request, jsonify
 import pickle
 import numpy as np
-import json 
+import pandas as pd
 
 app = Flask(__name__)
 model = pickle.load(open('classifier.pkl', 'rb'))
@@ -12,30 +12,9 @@ def home():
 
 @app.route("/predict", methods=["POST"])
 def predict():
-    data = request.form.values()
-    float_features = [float(x) for x in data]
-    final_features = [np.array(float_features)]
-    predictions = model.predict(final_features)
+    
+    return render_template("index.html", request.form.values())
 
-    if predictions == 0:
-        predictions = "NPK 10-26-26"
-    elif predictions == 1:
-        predictions = "NPK 14-35-14"
-    elif predictions == 2:
-        predictions = "NPK 17-17-17"
-    elif predictions == 3:
-        predictions = "NPK 20-20"
-    elif predictions == 4:
-        predictions = "NPK 28-28"
-    elif predictions == 5:
-        predictions = "NPK DAP"
-    else:
-        predictions = "NPK Urea"
-
-    return jsonify({"predictions": predictions})
-
-@app.route("/predict-web", methods=["POST"])
-def predictWeb():
     float_features = [float(x) for x in request.form.values()]
     final_features = [np.array(float_features)]
     predictions = model.predict(final_features)
