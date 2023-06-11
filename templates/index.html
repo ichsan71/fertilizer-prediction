@@ -6,43 +6,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Organeco</title>
 </head>
 <body>
     <div class="container contact-form">
-        <div class="contact-image">
-            <img src="https://image.ibb.co/kUagtU/rocket_contact.png" alt="rocket_contact"/>
-        </div>
-        <form action="{{url_for('predictWeb')}}" method="post">
-            <h3>Tes prediksi pepek</h3>
+        <form action="{{url_for('predict')}}" method="post">
+            <h3>Organeco Prediksi</h3>
            <div class="row">
                 <div class="col-md-6">
                     <div class="form-group">
-                        <input type="text" name="Temperature" class="form-control" placeholder="Temperature" value="" />
+                        <input type="text" name="temparature" class="form-control" placeholder="Temperature" value="" />
                     </div>
                     <div class="form-group">
-                        <input type="text" name="Humidity" class="form-control" placeholder="Humidity" value="" />
+                        <input type="text" name="humidity" class="form-control" placeholder="Humidity" value="" />
                     </div>
                     <div class="form-group">
-                        <input type="text" name="Moisture" class="form-control" placeholder="Moisture" value="" />
+                        <input type="text" name="moisture" class="form-control" placeholder="Moisture" value="" />
                     </div>
                     <div class="form-group">
-                        <input type="text" name="Soil_Type" class="form-control" placeholder="Soil_Type" value="" />
+                        <input type="text" name="soil_type" class="form-control" placeholder="Soil Type" value="" />
                     </div>
                     <div class="form-group">
-                        <input type="text" name="Crop_Type" class="form-control" placeholder="Crop_Type" value="" />
+                        <input type="text" name="crop_type" class="form-control" placeholder="Crop Type" value="" />
                     </div>
                     <div class="form-group">
-                        <input type="text" name="Nitrogen" class="form-control" placeholder="Nitrogen" value="" />
+                        <input type="text" name="nitrogen" class="form-control" placeholder="Nitrogen" value="" />
                     </div>
                     <div class="form-group">
-                        <input type="text" name="Potasium" class="form-control" placeholder="Potasium" value="" />
+                        <input type="text" name="potassium" class="form-control" placeholder="Potasium" value="" />
                     </div>
                     <div class="form-group">
-                        <input type="text" name="Fosfor" class="form-control" placeholder="Fosfor" value="" />
+                        <input type="text" name="phosphorous" class="form-control" placeholder="Fosfor" value="" />
                     </div>
                     <div class="form-group">
-                        <button type="submit" class="btnContact" > Jaya jaya jaya </button>
+                        <button type="submit" class="btnContact" > Prediksi </button>
                     </div>
                 </div>
                 <div class="col-md-6">

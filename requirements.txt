@@ -1,0 +1,7 @@
+Flask==2.0.3
+gunicorn>=20.1.0
+pandas>=0.22.0
+numpy>=1.24.3
+scipy>=0.18.1
+tensorflow
+tensorflow_decision_forests
