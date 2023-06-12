@@ -33,13 +33,13 @@ def predict():
 
     # Define the label mappings
     label_mappings = {
-        0: "10-26-26",
-        1: "14-35-14",
-        2: "17-17-17",
-        3: "20-20",
-        4: "28-28",
-        5: "DAP",
-        6: "Urea"
+        0: "NPK 10-26-26",
+        1: "NPK 14-35-14",
+        2: "NPK 17-17-17",
+        3: "NPK 20-20-0",
+        4: "NPK 28-28-0",
+        5: "NPK DAP",
+        6: "NPK Urea"
     }
 
     # Print the predicted label
