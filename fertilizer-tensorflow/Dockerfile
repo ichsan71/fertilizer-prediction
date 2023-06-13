@@ -6,3 +6,5 @@ WORKDIR /app
 
 # Copy the IPython Notebook file to the container
 COPY test.ipynb /app
+
+CMD ["pip", "install","-r" ]
