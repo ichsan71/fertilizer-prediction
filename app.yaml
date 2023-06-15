@@ -1,3 +1,4 @@
 entrypoint: gunicorn -b:$PORT main:app
 env: standard
 runtime: python39
+instance_class: F4
