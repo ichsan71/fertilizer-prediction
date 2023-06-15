@@ -19,7 +19,7 @@ tampparatus, moisture, humadity, soil type, crop type, nitrogen, potassium, phos
 - Dtreeviz (Vizualization)
 
 ### Example Dataset
-![image](https://drive.google.com/uc?export=view&id=1T7W7I_3Nc2hPx6TP-qKvZaFrtZDmiwj4)
+![image](https://drive.google.com/uc?export=view&id=10Dw53nqUE4R-47GRrNqhX2kXYfSSeNrZ)
 
 ### Accuracy and Loss
 ![image](https://drive.google.com/uc?export=view&id=1T7W7I_3Nc2hPx6TP-qKvZaFrtZDmiwj4)
